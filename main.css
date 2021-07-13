@@ -13,13 +13,13 @@ header {
 }
 
 .logo {
-    max-width: 200px;
+    max-width: 250px;
     padding-top: 3%;
     padding-left: 3%;
 }
 
 nav {
-    font-family: montserrat, sans-serif;
+    font-family: 'montserrat', sans-serif;
     font-weight: 700;
     font-style: normal;
     padding: 2% 0;
@@ -27,8 +27,22 @@ nav {
 
 nav ul {
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     list-style-type: none;
+    color: #707070;
+    padding-left: 3%;
+}
+
+nav ul li {
+    padding-right: 3%;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+.orange {
+    color: #f26423;
 }
 
 .home-hero {
@@ -36,4 +50,117 @@ nav ul {
     background-size: cover;
     background-position: center;
     min-height: 30vh;
+}
+
+.hero-title {
+    font-family: 'montserrat', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #707070;
+    padding-left: 9%;
+    padding-top: 11%;
+}
+
+.donate-button {
+    padding-top: 5%;
+    padding-left: 9%;
+}
+
+.donate-button-link {
+    background-color: #f26423;
+    padding: 2% 5%;
+    color: white;
+    text-decoration: none;
+    font-family: 'montserrat', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.mission {
+    background-color: #1c526b;
+    color: white;
+    padding: 10%;
+    font-family: 'bilo', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.ceo-name {
+    padding-top: 8%;
+    text-align: right;
+}
+
+.home-main-section {
+    background-color: #fda649;
+    padding: 10%;
+}
+
+.home-main-section figure {
+    position: relative;
+}
+
+.home-main-section figure img {
+    background-color: #1c526b;
+    padding: 2%;
+}
+
+.home-main-section figure figcaption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    color: white;
+    font-family: 'montserrat', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.home-main-1,
+.home-main-2 {
+    padding-bottom: 10%;
+}
+
+.home-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.home-grid figure {
+    width: 33.3333333333%;
+}
+
+.home-grid .grid4,
+.home-grid .grid5,
+.home-grid .grid6 {
+    margin-top: -2%;
+}
+
+
+/********************** START 700PX MEDIA QUERY ****************************/
+
+@media (min-width: 700px) {
+    .home-main-section {
+        display: flex;
+        padding: 5%;
+    }
+    .home-main-1,
+    .home-main-2 {
+        padding-bottom: 0;
+        padding-right: 4%;
+    }
+    .home-main-section figure figcaption {
+        font-size: 2rem;
+    }
+    .home-grid figure {
+        width: 16.6666666666667%;
+    }
+    .home-grid .grid4,
+    .home-grid .grid5,
+    .home-grid .grid6 {
+        margin-top: 0%;
+    }
 }
