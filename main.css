@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+header {
+    background-color: #f4f0dd;
+}
+
+.logo {
+    max-width: 200px;
+    padding-top: 3%;
+    padding-left: 3%;
+}
+
+nav {
+    font-family: montserrat, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    padding: 2% 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.home-hero {
+    background-image: url(images/home-hero.jpeg);
+    background-size: cover;
+    background-position: center;
+    min-height: 30vh;
+}
