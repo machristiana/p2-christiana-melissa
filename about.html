@@ -21,6 +21,9 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/70a4005e9d.js" crossorigin="anonymous"></script>
 
+    <!-- jQuery Library -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
     <!--[if lt IE 9]>
 		    <script src="js/html5shiv-printshiv.min.js"></script>
 		<![endif]-->
@@ -29,27 +32,201 @@
 <body>
 
     <header>
-        <div>
+        <div class=logo-position>
             <a href="index.html"><img class="logo-header" src="images/ASPCA-logo.png" title="ASPCA Logo" alt="ASPCA Logo" /></a>
         </div>
 
-        <!-- <nav>
-            <ul>
-                <li>ABOUT</li>
+        <!-- Mobile Nav Menu -->
+        <div class="menu">
+            <span></span>
+        </div>
+
+        <nav class="navbar-menu">
+            <!-- Main Menu -->
+            <ul class="menu-listing">
+                <li><a href="about.html">ABOUT</a></li>
                 <li><a class="orange" href="https://secure.aspca.org/donate/2021-eap-jul2-web-T1-P1?ms=wb_hom_position1-jul2-20210713&initialms=wb_hom_position1-jul2-20210713&pcode=WEB1HOM&lpcode=WEB2HOM">DONATE</a></li>
-                <li>OUR WORK</li>
-                <li>HOW CAN YOU HELP</li>
-                <li>CONTACT</li>
+                <li><a href="adopt.html">ADOPT</a></li>
+                <li class="nav-dropdown-mobile">
+                    <a href="#">OUR WORK</a>
+                    <!-- Sub Menu -->
+                    <div class="dropdown-mobile condensed-mobile">
+                        <ul>
+                            <li>HELPING PEOPLE AND PETS</li>
+                            <li>INVESTIGATIONS AND RESCUE</li>
+                            <li>ANIMAL CARE AND RECOVERY</li>
+                            <li>IMPRVOING LAWS FOR ANIMALS</li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="nav-dropdown-mobile">
+                    <a href="#">SERVICES</a>
+                    <!-- Sub Menu -->
+                    <div class="dropdown-mobile condensed-mobile">
+                        <ul>
+                            <li>NEW YORK CITY</li>
+                            <li>LOS ANGELES</li>
+                            <li>MIAMI, FL</li>
+                            <li>ASHEVILLE, NC</li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="https://www.aspca.org/about-us/contact-us">CONTACT</a></li>
             </ul>
-        </nav> -->
+        </nav>
+
+
+        <!-- Desktop Nav Menu -->
+
+        <nav class="desktop-nav">
+            <!-- Main Menu -->
+            <ul>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a class="orange" href="https://secure.aspca.org/donate/2021-eap-jul2-web-T1-P1?ms=wb_hom_position1-jul2-20210713&initialms=wb_hom_position1-jul2-20210713&pcode=WEB1HOM&lpcode=WEB2HOM">DONATE</a></li>
+                <li><a href="adopt.html">ADOPT</a></li>
+                <li class="nav-dropdown">
+                    <a href="#">OUR WORK</a>
+                    <!-- Sub Menu -->
+                    <div class="dropdown condensed">
+                        <ul>
+                            <li class="nav-work">HELPING PEOPLE AND PETS</li>
+                            <li class="nav-work">INVESTIGATIONS AND RESCUE</li>
+                            <li class="nav-work">ANIMAL CARE AND RECOVERY</li>
+                            <li class="nav-work">IMPRVOING LAWS FOR ANIMALS</li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="nav-dropdown">
+                    <a href="#">SERVICES</a>
+                    <!-- Sub Menu -->
+                    <div class="dropdown condensed">
+                        <ul>
+                            <li class="nav-services">NEW YORK CITY</li>
+                            <li class="nav-services">LOS ANGELES</li>
+                            <li class="nav-services">MIAMI, FL</li>
+                            <li class="nav-services">ASHEVILLE, NC</li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="https://www.aspca.org/about-us/contact-us">CONTACT</a></li>
+            </ul>
+        </nav>
+
 
     </header>
 
 
     <main>
+        <section class="about-hero">
+            <!-- <h1>WHO WE ARE</h1> -->
+        </section>
+
+        <!-- <section class="about-hero">
+            <figure>
+                <figcaption>
+                    <h1>WHO WE ARE</h1>
+                </figcaption>
+                <figure>
+                    <img src="images/about-hero2.png" />
+                    <figcaption>
+                        <div class=section2-background-about>
+                            <h2>MISSION STATEMENT</h2>
+                            <p>“To provide effective means for the prevention of cruelty to animals throughout the United States.”</p>
+                            <div>
+                                <p>- Henry Bergh</p>
+                                <p>ASPCA Founder</p>
+                            </div>
+                        </div>
+                    </figcaption>
+                </figure>
+            </figure>
+        </section> -->
+
+        <section class="section2-about">
+            <div class=section2-background-about>
+                <h2>MISSION STATEMENT</h2>
+                <p>“To provide effective means for the prevention of cruelty to animals throughout the United States.”</p>
+                <div class="founder-name">
+                    <p>- Henry Bergh</p>
+                    <p>ASPCA Founder</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="section3-about">
+            <h2>WE ARE THEIR VOICE</h2>
+            <figure>
+                <img src="images/about5.png" title="" alt="" />
+                <figcaption>
+                    <div>
+                        <p class="p1">The American Society for the Prevention of Cruelty to Animals® (ASPCA®) was the first humane society to be established in North America and is, today, one of the largest in the world.</p>
+                        <p class="p2">Our organization was founded on the belief that animals are entitled to kind and respectful treatment at the hands of humans and must be protected under the law. Headquartered in New York City, the ASPCA maintains a strong local
+                            presence, and with programs that extend our anti-cruelty mission across the country, we are recognized as a national animal welfare organization. We are a privately funded 501(c)(3) not-for-profit corporation, and are proud
+                            to boast more than 2 million supporters across the country.</p>
+                    </div>
+                </figcaption>
+            </figure>
+
+        </section>
+
+        <section class="section4-about">
+            <h2>THE ASPCA BY THE NUMBERS</h2>
+            <div class="statistics">
+                <figure>
+                    <img src="images/about-stats1.png" title="" alt="" />
+                    <figcaption>
+                        <p class="stats">104,900+</p>
+                        <p class="stats-title">Animals Assisted</p>
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/about-stats2.png" title="" alt="" />
+                    <figcaption>
+                        <p class="stats">27,700+</p>
+                        <p class="stats-title">Animals Relocated</p>
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/about-stats3.png" title="" alt="" />
+                    <figcaption>
+                        <p class="stats">370,590+</p>
+                        <p class="stats-title">Animals Helped By Poison Control Center</p>
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/about-stats4.png" title="" alt="" />
+                    <figcaption>
+                        <p class="stats">47,000+</p>
+                        <p class="stats-title">Spay/Neuter Surgeries Performed</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section>
+
+            <div class="donate-button-hero">
+                <div class="donate-button-about">
+                    <a class="donate-button-link-about" href="https://secure.aspca.org/donate/2021-eap-jul2-web-T1-P1?ms=wb_hom_position1-jul2-20210713&initialms=wb_hom_position1-jul2-20210713&pcode=WEB1HOM&lpcode=WEB2HOM">DONATE</a>
+                </div>
+            </div>
 
 
-
+            <!-- <figure>
+                <img src="images/about3.jpeg" />
+                <figcaption>
+                    <div class="donate-button-about">
+                        <a class="donate-button-link-about" href="https://secure.aspca.org/donate/2021-eap-jul2-web-T1-P1?ms=wb_hom_position1-jul2-20210713&initialms=wb_hom_position1-jul2-20210713&pcode=WEB1HOM&lpcode=WEB2HOM">DONATE</a>
+                    </div>
+                </figcaption>
+            </figure> -->
+        </section>
 
     </main>
 
@@ -80,6 +257,9 @@
 
 
     </footer>
+    <script src="js/nav-dropdown.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/mobile-nav-dropdown.js"></script>
 
 </body>
 
