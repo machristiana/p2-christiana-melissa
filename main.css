@@ -261,7 +261,7 @@ color: #f26423;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 10;
-    color: white;
+    color: #f4f0dd;
     font-family: 'montserrat', sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -280,8 +280,20 @@ color: #f26423;
     padding-bottom: 10%;
 }
 
-.home-main-section a figcaption:hover {
+
+/* .home-main-section a figcaption:hover {
     color: #f26423;
+} */
+
+.shadow img {
+    transition: .5s ease;
+}
+
+.shadow img:hover {
+    box-shadow: 1px 1px #f26423, 2px 2px #f26423, 3px 3px #f26423, 4px 4px #f26423, 5px 5px #f26423, 6px 6px #f26423;
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+    transition: .5s ease;
 }
 
 .home-grid {
