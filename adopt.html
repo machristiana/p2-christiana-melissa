@@ -118,9 +118,51 @@
 
 
     <main>
+        <section class="adopt-section1">
+            <h1>ADOPT A PET</h1>
+            <div class="adopt-hero"></div>
+        </section>
+
+        <section class="adopt-section2">
+            <h2>FIND A FURRY FRIEND</h2>
+            <div class="form">
+                <p>SEARCH:</p>
+                <form id="submit">
+                    <div class="animal-input">
+                        <select name="animal" id="animal" placeholder="Animal">
+                            <option value="Dog">Dog</option>
+                            <option value="Cat">Cat</option>
+                            <option value="Horse">Horse</option>
+                          </select><br>
+                    </div>
+                    <div class="breed-input">
+                        <input type="text" id="breed" name="breed" placeholder="Breed"><br>
+                    </div>
+                    <div class="zipcode-input">
+                        <input type="text" id="zipcode" name="zipcode" placeholder="Zipcode"><br>
+                    </div>
+                    <div>
+                        <input id="submit-button" class="submit-button" type="submit" value="SUBMIT">
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section>
+            <figure>
+                <img class="pet-image" id="pet-image">
+                <p id="pet-breeds">Breed: </p>
+                <p id="pet-gender">Gender: </p>
+                <p id="pet-age">DOB/Age: </p>
+                <p id="pet-size">Size: </p>
+            </figure>
+        </section>
 
         <section>
 
+        </section>
+
+        <section>
             <div class="donate-button-hero">
                 <div class="donate-button-about">
                     <a class="donate-button-link-about" href="https://secure.aspca.org/donate/2021-eap-jul2-web-T1-P1?ms=wb_hom_position1-jul2-20210713&initialms=wb_hom_position1-jul2-20210713&pcode=WEB1HOM&lpcode=WEB2HOM">DONATE</a>
@@ -159,9 +201,10 @@
 
 
     </footer>
-    <script src="js/nav-dropdown.js"></script>
+    <!-- <script src="js/nav-dropdown.js"></script>
     <script src="js/hamburger.js"></script>
-    <script src="js/mobile-nav-dropdown.js"></script>
+    <script src="js/mobile-nav-dropdown.js"></script> -->
+    <script src="js/api.js"></script>
 
 </body>
 

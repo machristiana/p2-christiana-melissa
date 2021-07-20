@@ -9,7 +9,7 @@ img {
 }
 
 
-/********************** START HAMBURGER MENU STYLING ****************************/
+/********************* START HAMBURGER MENU STYLING ****************************/
 
 .desktop-nav {
     display: none;
@@ -541,6 +541,73 @@ color: #1c526b;
 }
 
 
+/********************** START ADOPT PAGE STYLING ****************************/
+
+.adopt-section1 h1,
+.adopt-section2 h2 {
+    padding: 5% 0 3% 3%;
+    color: #f26423;
+    font-family: 'montserrat', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.adopt-section1 h1 {
+    font-size: 2rem;
+}
+
+.adopt-hero {
+    background-image: url(images/adopt-hero.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 30vh;
+}
+
+.adopt-section2 .form {
+    text-align: center;
+}
+
+.adopt-section2 form {
+    padding: 3% 0 7% 0;
+}
+
+.adopt-section2 p {
+    font-family: 'montserrat', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #1c526b
+}
+
+.adopt-section2 form div {
+    padding-bottom: 3%;
+}
+
+.adopt-section2 form input,
+.adopt-section2 form select {
+    border: solid 2px #1c526b;
+    border-radius: 25px;
+    text-align: center;
+    padding: 1% 0 1% 0;
+    color: #707070;
+}
+
+.adopt-section2 form select {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.adopt-section2 form .submit-button {
+    padding: 2%;
+    background-color: #f26423;
+    color: white;
+    border-radius: 10px;
+}
+
+.pet-image {
+    max-width: 300px;
+}
+
+
 /********************** START 400PX MEDIA QUERY ****************************/
 
 @media (min-width: 400px) {
@@ -582,7 +649,8 @@ color: #1c526b;
 /********************** START 600PX MEDIA QUERY ****************************/
 
 @media (min-width: 600px) {
-    .home-hero {
+    .home-hero,
+    .adopt-hero {
         min-height: 40vh;
     }
     .opacity {
@@ -597,7 +665,8 @@ color: #1c526b;
 /********************** START 700PX MEDIA QUERY ****************************/
 
 @media (min-width: 700px) {
-    .home-hero {
+    .home-hero,
+    .adopt-hero {
         min-height: 50vh;
     }
     /* .home-title-button {
@@ -654,6 +723,15 @@ padding-top: 6%;
     }
     .founder-name {
         padding-top: 3%;
+    }
+    .adopt-section2 form {
+        display: flex;
+        justify-content: center;
+    }
+    .adopt-section2 form .animal-input,
+    .adopt-section2 form .breed-input,
+    .adopt-section2 form .zipcode-input {
+        padding-right: 2%;
     }
 }
 
@@ -791,7 +869,8 @@ padding-top: 6%;
 /********************** START 1200PX MEDIA QUERY ****************************/
 
 @media (min-width: 1200px) {
-    .home-hero {
+    .home-hero,
+    .adopt-hero {
         min-height: 60vh;
     }
     .home-title-button {
@@ -826,5 +905,8 @@ padding-top: 6%;
     }
     .about-info {
         width: 60%;
+    }
+    .adopt-section1 h1 {
+        font-size: 3rem;
     }
 }
