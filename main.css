@@ -16,7 +16,7 @@ img {
 }
 
 .menu {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     background-color: #f26423;
@@ -164,7 +164,7 @@ header {
 
 .logo-header,
 .logo-footer {
-    max-width: 250px;
+    max-width: 225px;
 }
 
 .logo-position {
@@ -178,6 +178,8 @@ header {
     background-size: cover;
     background-position: center;
     min-height: 30vh;
+    position: relative;
+    z-index: -1;
 }
 
 .hero-title {
@@ -373,15 +375,18 @@ footer ul {
     background-size: cover;
     background-position: center;
     min-height: 30vh;
+    position: relative;
+    z-index: -1;
 }
 
 .about-hero h1 {
     color: white;
-    padding-top: 5%;
     text-align: center;
     font-family: 'montserrat', sans-serif;
     font-weight: 700;
     font-style: normal;
+    font-size: 3rem;
+    padding: 5% 4% 0 4%;
 }
 
 
@@ -410,10 +415,44 @@ padding: 5% 10%;
     text-align: center;
     padding-bottom: 4%;
     padding: 5%;
+    color: #f26423;
+    font-family: 'montserrat', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2rem;
 }
 
 .section3-about figure {
     position: relative;
+}
+
+.opacity {
+    background-color: white;
+    opacity: 0.7;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    width: 88%;
+    height: 88%;
+}
+
+.about-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    width: 82%;
+    font-size: 15px;
+}
+
+.about-info p {
+    color: #1c526b;
+    font-family: 'bilo', sans-serif;
+    font-weight: 600;
+    font-style: normal;
 }
 
 
@@ -472,7 +511,7 @@ color: #1c526b;
 }
 
 .donate-button-hero {
-    background-image: url(images/about3.jpeg);
+    background-image: url(images/about2.jpeg);
     background-size: cover;
     background-position: center;
     min-height: 30vh;
@@ -505,6 +544,13 @@ color: #1c526b;
 /********************** START 400PX MEDIA QUERY ****************************/
 
 @media (min-width: 400px) {
+    .logo-header,
+    .logo-footer {
+        max-width: 225px;
+    }
+    .opacity {
+        height: 70%;
+    }
     .statistics {
         display: flex;
         flex-wrap: wrap;
@@ -515,11 +561,32 @@ color: #1c526b;
 }
 
 
+/********************** START 450PX MEDIA QUERY ****************************/
+
+@media (min-width: 450px) {
+    .opacity {
+        height: 60%;
+    }
+}
+
+
+/********************** START 500PX MEDIA QUERY ****************************/
+
+@media (min-width: 500px) {
+    .opacity {
+        height: 48%;
+    }
+}
+
+
 /********************** START 600PX MEDIA QUERY ****************************/
 
 @media (min-width: 600px) {
     .home-hero {
         min-height: 40vh;
+    }
+    .opacity {
+        height: 65%;
     }
     .statistics figure {
         width: 25%;
@@ -578,6 +645,15 @@ padding-top: 6%;
     }
     .donate-button-link-about {
         font-size: 20px;
+    }
+    .about-hero {
+        min-height: 50vh;
+    }
+    .section2-background-about {
+        padding: 3% 3%;
+    }
+    .founder-name {
+        padding-top: 3%;
     }
 }
 
@@ -668,6 +744,13 @@ padding-top: 6%;
     .footer-copy {
         padding-top: 5%;
     }
+    .section2-about,
+    .founder-name {
+        text-align: center;
+    }
+    .opacity {
+        height: 44%;
+    }
 }
 
 
@@ -683,6 +766,24 @@ padding-top: 6%;
     }
     .dropdown .nav-services {
         width: 130%;
+    }
+    .section2-background-about h2 {
+        padding-bottom: 2%;
+    }
+    .section2-background-about .mission-statement {
+        font-size: 1.5rem;
+    }
+    .section3-about figure {
+        text-align: center;
+    }
+    .section3-about img {
+        max-width: 1000px;
+    }
+    .opacity {
+        width: 72%;
+    }
+    .about-info {
+        width: 70%;
     }
 }
 
@@ -713,5 +814,17 @@ padding-top: 6%;
     .donate-button-link-about {
         font-size: 30px;
         padding: 2% 3%;
+    }
+    .about-hero {
+        min-height: 60vh;
+    }
+    .about-hero h1 {
+        font-size: 4rem;
+    }
+    .opacity {
+        width: 62%;
+    }
+    .about-info {
+        width: 60%;
     }
 }
