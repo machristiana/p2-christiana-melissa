@@ -243,11 +243,6 @@ header {
     position: relative;
 }
 
-
-/* .home-main-section figure:hover {
-color: #f26423;
-} */
-
 .home-main-section figure img {
     background-color: #1c526b;
     padding: 2%;
@@ -274,20 +269,10 @@ color: #f26423;
     text-shadow: 2px 2px 4px #000000;
 }
 
-
-/* .home-main-section figure figcaption:hover {
-color: #f26423;
-} */
-
 .home-main-figure-1,
 .home-main-figure-2 {
     padding-bottom: 10%;
 }
-
-
-/* .home-main-section a figcaption:hover {
-    color: #f26423;
-} */
 
 .shadow img {
     transition: .5s ease;
@@ -370,6 +355,96 @@ footer ul {
 }
 
 
+/*************** START MODAL POP UP AD STYLING ******************/
+
+.modal-pop-up {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 20;
+    display: none;
+}
+
+.modal-pop-up img {
+    max-width: 700px;
+    width: 300px;
+}
+
+.modal-pop-up figure {
+    position: relative;
+}
+
+.modal-pop-up figure figcaption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    width: 80%;
+    text-align: center;
+}
+
+.modal-pop-up figure figcaption p {
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: 'montserrat', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.modal-pop-up figure figcaption .modal-p1 {
+    padding-bottom: 10%;
+}
+
+.modal-pop-up figure figcaption .modal-p2 {
+    font-size: 20px;
+}
+
+.donate-button-modal {
+    padding-top: 8%;
+}
+
+.close-btn {
+    position: absolute;
+    color: #f26423;
+    font-size: 30px;
+    font-weight: bold;
+    top: 8px;
+    right: 16px;
+}
+
+.close-btn:hover {
+    color: #1c526b;
+    cursor: pointer;
+}
+
+
+/******************* ANIMATION FOR POP UP AD ******************/
+
+@-webkit-keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+
 /********************** START ABOUT PAGE STYLING ****************************/
 
 .about-hero {
@@ -390,11 +465,6 @@ footer ul {
     font-size: 3rem;
     padding: 5% 4% 0 4%;
 }
-
-
-/* .section2-about {
-padding: 5% 10%;
-} */
 
 .section2-background-about {
     background-color: #fda649;
@@ -456,20 +526,6 @@ padding: 5% 10%;
     font-weight: 600;
     font-style: normal;
 }
-
-
-/* .section3-about figcaption {
-padding: 5%;
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-z-index: 10;
-width: 80%;
-background-color: white;
-opacity: .5;
-color: #1c526b;
-} */
 
 .section3-about .p1 {
     padding-bottom: 4%;
@@ -658,6 +714,9 @@ color: #1c526b;
 }
 
 
+/****************** START TABBED CONTENT STYLING ********************/
+
+
 /**
  * Tabs navigation
  */
@@ -770,89 +829,6 @@ color: #1c526b;
 
 .c-tabs.no-js .c-tab:last-child {
     margin-bottom: 0;
-}
-
-.modal-pop-up {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 20;
-    display: none;
-}
-
-.modal-pop-up img {
-    max-width: 700px;
-    width: 300px;
-}
-
-.modal-pop-up figure {
-    position: relative;
-}
-
-.modal-pop-up figure figcaption {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 10;
-    width: 80%;
-    text-align: center;
-}
-
-.modal-pop-up figure figcaption p {
-    color: white;
-    font-family: 'montserrat', sans-serif;
-    font-weight: 700;
-    font-style: normal;
-}
-
-.modal-pop-up figure figcaption .modal-p1 {
-    padding-bottom: 10%;
-}
-
-.modal-pop-up figure figcaption .modal-p2 {
-    font-size: 20px;
-}
-
-.donate-button-modal {
-    padding-top: 8%;
-}
-
-.close-btn {
-    position: absolute;
-    color: #f26423;
-    font-size: 30px;
-    font-weight: bold;
-    top: 8px;
-    right: 16px;
-}
-
-.close-btn:hover {
-    color: #1c526b;
-    cursor: pointer;
-}
-
-@-webkit-keyframes animatetop {
-    from {
-        top: -300px;
-        opacity: 0
-    }
-    to {
-        top: 0;
-        opacity: 1
-    }
-}
-
-@keyframes animatetop {
-    from {
-        top: -300px;
-        opacity: 0
-    }
-    to {
-        top: 0;
-        opacity: 1
-    }
 }
 
 
