@@ -178,8 +178,8 @@ header {
     background-size: cover;
     background-position: center;
     min-height: 30vh;
-    position: relative;
-    z-index: -1;
+    /* position: relative; */
+    /* z-index: -1; */
 }
 
 .hero-title {
@@ -189,6 +189,8 @@ header {
     color: #707070;
     padding-left: 9%;
     width: 53%;
+    position: relative;
+    z-index: 1;
 }
 
 .home-title-button {
@@ -770,6 +772,89 @@ color: #1c526b;
     margin-bottom: 0;
 }
 
+.modal-pop-up {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 20;
+    display: none;
+}
+
+.modal-pop-up img {
+    max-width: 700px;
+    width: 300px;
+}
+
+.modal-pop-up figure {
+    position: relative;
+}
+
+.modal-pop-up figure figcaption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    width: 80%;
+    text-align: center;
+}
+
+.modal-pop-up figure figcaption p {
+    color: white;
+    font-family: 'montserrat', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.modal-pop-up figure figcaption .modal-p1 {
+    padding-bottom: 10%;
+}
+
+.modal-pop-up figure figcaption .modal-p2 {
+    font-size: 20px;
+}
+
+.donate-button-modal {
+    padding-top: 8%;
+}
+
+.close-btn {
+    position: absolute;
+    color: #f26423;
+    font-size: 30px;
+    font-weight: bold;
+    top: 8px;
+    right: 16px;
+}
+
+.close-btn:hover {
+    color: #1c526b;
+    cursor: pointer;
+}
+
+@-webkit-keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
 
 /********************** START 400PX MEDIA QUERY ****************************/
 
@@ -788,6 +873,9 @@ color: #1c526b;
     .statistics figure {
         width: 50%;
     }
+    .modal-pop-up img {
+        width: 360px;
+    }
 }
 
 
@@ -805,6 +893,9 @@ color: #1c526b;
 @media (min-width: 500px) {
     .opacity {
         height: 48%;
+    }
+    .modal-pop-up img {
+        width: 450px;
     }
 }
 
@@ -910,6 +1001,9 @@ padding-top: 6%;
     .c-tabs {
         padding: 3% 5% 5% 5%;
     }
+    .modal-pop-up img {
+        width: 600px;
+    }
 }
 
 
@@ -969,6 +1063,10 @@ padding-top: 6%;
     }
     .desktop-nav .orange {
         color: #f26423;
+    }
+    .dropdown {
+        position: relative;
+        z-index: 10;
     }
     .dropdown ul {
         flex-direction: column;
@@ -1101,5 +1199,18 @@ padding-top: 6%;
     }
     .adopt-section1 h1 {
         font-size: 3rem;
+    }
+    .modal-pop-up img {
+        width: 700px;
+    }
+    .modal-pop-up figure figcaption {
+        width: 70%;
+    }
+    .modal-pop-up figure figcaption .modal-p1 {
+        font-size: 20px;
+        padding-bottom: 7%;
+    }
+    .modal-pop-up figure figcaption .modal-p2 {
+        font-size: 30px;
     }
 }
