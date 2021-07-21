@@ -29,6 +29,7 @@ function displayAvailableAnimals(type, location) {
 
                     var submitButton = document.getElementById("submit")
 
+                    //BREED INFO
                     var petBreeds = document.getElementById("pet-breeds");
                     var petBreedsInfo = document.createTextNode(response.animals[0].breeds.primary);
 
@@ -46,8 +47,7 @@ function displayAvailableAnimals(type, location) {
 
 
 
-
-
+                    //GENDER INFO
                     var petGender = document.getElementById("pet-gender");
                     var petGenderInfo = document.createTextNode(response.animals[0].gender);
 
@@ -55,20 +55,25 @@ function displayAvailableAnimals(type, location) {
 
 
 
+                    //AGE INFO
                     var petAge = document.getElementById("pet-age");
                     var petAgeInfo = document.createTextNode(response.animals[0].age);
 
                     petAge.appendChild(petAgeInfo);
 
 
+                    //SIZE INFO
                     var petSize = document.getElementById("pet-size");
                     var petSizeInfo = document.createTextNode(response.animals[0].size);
 
                     petSize.appendChild(petSizeInfo);
 
 
+                    //PHOTOS
                     var petImage = document.getElementById("pet-image");
                     petImage.src = response.animals[0].photos[0].full;
+
+
 
 
                     // document.getElementById("submit-button").addEventListener("click",
@@ -76,7 +81,6 @@ function displayAvailableAnimals(type, location) {
 
                     //     }, false
                     // );
-
 
 
 
