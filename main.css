@@ -371,7 +371,7 @@ footer ul {
 /********************** START ABOUT PAGE STYLING ****************************/
 
 .about-hero {
-    background-image: url(images/about-hero2.png);
+    background-image: url(images/about-hero.png);
     background-size: cover;
     background-position: center;
     min-height: 30vh;
