@@ -601,10 +601,173 @@ color: #1c526b;
     background-color: #f26423;
     color: white;
     border-radius: 10px;
+    transition: .5s;
+}
+
+.adopt-section2 form .submit-button:hover {
+    background-color: white;
+    color: #f26423;
+    transition: .5s;
+}
+
+.adopt-section3 {
+    padding-bottom: 6%;
+}
+
+.adopt-section3 figure {
+    text-align: center;
+}
+
+.adopt-section3 figure .pet-info {
+    padding: 6% 0;
+}
+
+.adopt-section3 figure div p {
+    color: #1c526b;
+    font-family: 'bilo', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.adopt-section3 figure div p span {
+    color: #1c526b;
+    font-family: 'bilo', sans-serif;
+    font-weight: 600;
+    font-style: normal;
 }
 
 .pet-image {
     max-width: 300px;
+    border: solid #1c526b 2px;
+}
+
+.adopt-section3 .border {
+    border-bottom: 1px solid #1c526b;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.adopt-section4 h2 {
+    text-align: center;
+    color: #f26423;
+    font-family: 'montserrat', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+/**
+ * Tabs navigation
+ */
+
+.c-tabs {
+    padding: 5%;
+}
+
+.c-tabs-nav {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.c-tabs-nav__link {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    margin-right: 4px;
+    padding: 12px;
+    color: #fda649;
+    background-color: #1c526b;
+    text-align: center;
+    -webkit-transition: color 0.3s;
+    transition: color 0.3s;
+    text-decoration: none;
+}
+
+.c-tabs-nav__link:last-child {
+    margin-right: 0;
+}
+
+.c-tabs-nav__link:hover {
+    color: #f26423;
+}
+
+.c-tabs-nav__link.is-active {
+    color: #f26423;
+    background-color: #f4f0dd;
+}
+
+.c-tabs-nav__link i,
+.c-tabs-nav__link span {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+.c-tabs-nav__link i {
+    font-size: 18px;
+}
+
+.c-tabs-nav__link span {
+    display: none;
+    font-size: 18px;
+    font-family: 'bilo', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+/**
+   * Tab
+   */
+
+.c-tab {
+    display: none;
+    background-color: #f4f0dd;
+}
+
+.c-tab.is-active {
+    display: block;
+}
+
+.c-tab__content {
+    padding: 1.5rem;
+    color: #1c526b;
+}
+
+.c-tab__content ul {
+    padding-left: 2%;
+}
+
+.c-tab__content h2,
+.c-tab__content ul li {
+    padding-bottom: 2%;
+    font-family: 'bilo', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+/**
+   * Tabs no-js fallback
+   */
+
+.c-tabs.no-js .c-tabs-nav {
+    display: none;
+}
+
+.c-tabs.no-js .c-tab {
+    display: block;
+    margin-bottom: 1.5rem;
+}
+
+.c-tabs.no-js .c-tab:last-child {
+    margin-bottom: 0;
 }
 
 
@@ -732,6 +895,36 @@ padding-top: 6%;
     .adopt-section2 form .breed-input,
     .adopt-section2 form .zipcode-input {
         padding-right: 2%;
+    }
+    .adopt-section2 form .submit-button {
+        padding: 10% 20% 10% 20%;
+    }
+    .adopt-section3 figure {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 8%;
+    }
+    .adopt-section3 figure .pet-info {
+        padding-left: 8%;
+    }
+    .c-tabs {
+        padding: 3% 5% 5% 5%;
+    }
+}
+
+
+/********************** START 720PX MEDIA QUERY ****************************/
+
+@media all and (min-width: 720px) {
+    .c-tabs-nav__link i {
+        margin-bottom: 12px;
+        font-size: 22px;
+    }
+    .c-tabs-nav__link span {
+        display: block;
+    }
+    .c-tab__content h2 {
+        display: none;
     }
 }
 
