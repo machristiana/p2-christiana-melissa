@@ -612,7 +612,7 @@
     }
     
     .adopt-section2 form {
-        padding: 3% 0 0 0;
+        padding: 3% 0 4% 0;
     }
     
     .adopt-section2 p {
@@ -682,7 +682,7 @@
     
     .pet-image {
         max-width: 300px;
-        border: solid #1c526b 3px;
+        border: solid #1c526b 5px;
     }
     
     .border {
