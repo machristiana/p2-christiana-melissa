@@ -145,7 +145,6 @@
         color: #f4f0dd;
         transition: 0.5s;
     }
-    /* .dropdown-mobile ul li a {} */
     
     .condensed-mobile {
         display: none;
@@ -172,8 +171,6 @@
         background-size: cover;
         background-position: center;
         min-height: 30vh;
-        /* position: relative; */
-        /* z-index: -1; */
     }
     
     .hero-title {
@@ -707,9 +704,7 @@
         padding-top: 4%;
     }
     /****************** START TABBED CONTENT STYLING ********************/
-    /**
- * Tabs navigation
- */
+    /** Tabs navigation **/
     
     .c-tabs {
         padding: 5%;
@@ -771,9 +766,7 @@
         font-weight: 600;
         font-style: normal;
     }
-    /**
-   * Tab
-   */
+    /** Tab **/
     
     .c-tab {
         display: none;
@@ -800,9 +793,7 @@
         font-weight: 600;
         font-style: normal;
     }
-    /**
-   * Tabs no-js fallback
-   */
+    /** Tabs no-js fallback **/
     
     .c-tabs.no-js .c-tabs-nav {
         display: none;
@@ -875,9 +866,6 @@
         .adopt-hero {
             min-height: 50vh;
         }
-        /* .home-title-button {
-padding-top: 6%;
-} */
         .hero-title {
             width: 100%;
         }
@@ -958,8 +946,6 @@ padding-top: 6%;
             padding-bottom: 0;
         }
         .adopt-section3 figure {
-            /* display: flex;
-        justify-content: center; */
             padding-bottom: 8%;
             width: 50%;
         }
