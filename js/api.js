@@ -1,4 +1,4 @@
-function displayAvailableAnimals(type, location) {
+function displayAvailableAnimals(type, location, breed) {
 
     var xmlhttp = new XMLHttpRequest(); // new HttpRequest instance 
     var theUrl = "https://api.petfinder.com/v2/oauth2/token";
@@ -7,7 +7,7 @@ function displayAvailableAnimals(type, location) {
     xmlhttp.onreadystatechange = function() {
         if (xmlhttp.readyState === 4) {
             var bearer = JSON.parse(xmlhttp.responseText).access_token;
-            var url = "https://api.petfinder.com/v2/animals?type=" + type + "&location=" + location;
+            var url = "https://api.petfinder.com/v2/animals?type=" + type + "&location=" + location + "&breed=" + breed;
             var xhr = new XMLHttpRequest();
             xhr.open("GET", url);
             xhr.setRequestHeader("Accept", "application/json");
@@ -20,78 +20,52 @@ function displayAvailableAnimals(type, location) {
 
                     var response = JSON.parse(xhr.responseText);
 
-                    console.log(response.animals);
-
-                    // console.log(response.animals[0].photos.full)
 
 
+                    document.getElementsByClassName('adopt-section3')[0].innerHTML = " ";
 
+                    console.log(response.animals[0]);
 
-                    var submitButton = document.getElementById("submit")
+                    for (i = 0; i < 8; i++) {
 
-                    //BREED INFO
-                    var petBreeds = document.getElementById("pet-breeds");
-                    var petBreedsInfo = document.createTextNode(response.animals[0].breeds.primary);
-
-                    // petBreeds.appendChild(petBreedsInfo);
-
-
-                    function changePetBreeds() {
-                        for (i = 0; i < petBreeds.length; i++) {
-                            petBreeds[i].appendChild(petBreedsInfo);
+                        if (response.animals[i].primary_photo_cropped == null) {
+                            var image = "images/noimage.jpeg";
+                        } else {
+                            var image = response.animals[i].primary_photo_cropped.full;
                         }
+
+
+                        var breed = response.animals[i].breeds.primary;
+                        var gender = response.animals[i].gender;
+                        var age = response.animals[i].age;
+                        var size = response.animals[i].size;
+                        var name = response.animals[i].name;
+
+
+
+
+                        let placeholder = `
+                    <figure>
+                        <div>
+                            <img src="${image}" class="pet-image" id="pet-image" alt="No image placeholder" title="No image placeholder">
+                        </div>
+
+                        <div class="pet-info">
+                            <p id="pet-name"><span>Name:</span> ${name}</p>
+                            <p id="pet-breeds"><span>Breed:</span> ${breed}</p>
+                            <p id="pet-gender"><span>Gender:</span> ${gender}</p>
+                            <p id="pet-age"><span>Age:</span> ${age}</p>
+                            <p id="pet-size"><span>Size:</span> ${size}</p>
+                        </div>
+                     </figure>
+                    `
+
+
+                        document.getElementsByClassName('adopt-section3')[0].innerHTML += placeholder;
+
                     }
 
-                    submitButton.addEventListener('click', changePetBreeds);
 
-
-
-
-                    //GENDER INFO
-                    var petGender = document.getElementById("pet-gender");
-                    var petGenderInfo = document.createTextNode(response.animals[0].gender);
-
-                    petGender.appendChild(petGenderInfo);
-
-
-
-                    //AGE INFO
-                    var petAge = document.getElementById("pet-age");
-                    var petAgeInfo = document.createTextNode(response.animals[0].age);
-
-                    petAge.appendChild(petAgeInfo);
-
-
-                    //SIZE INFO
-                    var petSize = document.getElementById("pet-size");
-                    var petSizeInfo = document.createTextNode(response.animals[0].size);
-
-                    petSize.appendChild(petSizeInfo);
-
-
-                    //PHOTOS
-                    var petImage = document.getElementById("pet-image");
-                    petImage.src = response.animals[0].photos[0].full;
-
-
-
-
-                    // document.getElementById("submit-button").addEventListener("click",
-                    //     function displayAvailableAnimals() {
-
-                    //     }, false
-                    // );
-
-
-
-                    // function addBreed() {
-                    //     var p1 = document.getElementById("pet-breeds"),
-                    //         petBreeds = response.animals[0].breeds.primary;
-
-                    //     p1.appendChild(addBreed);
-                    // }
-
-                    // addBreed();
 
                 }
             };
@@ -104,4 +78,3 @@ function displayAvailableAnimals(type, location) {
         "client_secret": "mI05IC8FaXZYC80WVgb1d4gfhlJeB94wO6Qw2Wn0"
     }));
 }
-// displayAvailableAnimals(type, location);

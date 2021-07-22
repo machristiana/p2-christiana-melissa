@@ -141,27 +141,15 @@
                         <input type="text" id="zipcode" name="zipcode" placeholder="Zipcode"><br>
                     </div>
                     <div>
-                        <input id="submit-button" class="submit-button" type="submit" value="SUBMIT">
+                        <input id="submit-button" class="submit-button" value="SUBMIT" type="button" onclick="displayAvailableAnimals(document.getElementById('animal').value, document.getElementById('zipcode').value, document.getElementById('breed').value)">
                     </div>
                 </form>
             </div>
         </section>
 
-        <section class="adopt-section3">
-            <figure>
-                <div>
-                    <img class="pet-image" id="pet-image" src="images/noimage.jpeg" alt="No image placeholder" title="No image placeholder">
-                </div>
+        <section class="adopt-section3"></section>
+        <div class="border"></div>
 
-                <div class="pet-info">
-                    <p id="pet-breeds"><span>Breed:</span> </p>
-                    <p id="pet-gender"><span>Gender:</span> </p>
-                    <p id="pet-age"><span>DOB/Age:</span> </p>
-                    <p id="pet-size"><span>Size:</span> </p>
-                </div>
-            </figure>
-            <div class="border"></div>
-        </section>
 
         <section class="adopt-section4">
             <h2>Adoption Tips</h2>
