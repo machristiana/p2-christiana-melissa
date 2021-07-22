@@ -1,3 +1,5 @@
+// Petfinder api - https://www.petfinder.com/developers/v2/docs/
+
 function displayAvailableAnimals(type, location, breed) {
 
     var xmlhttp = new XMLHttpRequest(); // new HttpRequest instance 

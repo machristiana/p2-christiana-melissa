@@ -264,6 +264,7 @@
     .home-main-figure-2 {
         padding-bottom: 10%;
     }
+    /***** Hover Effect - https://thebrandsmen.com/css-image-hover-effects/ *****/
     
     .shadow img {
         transition: .5s ease;

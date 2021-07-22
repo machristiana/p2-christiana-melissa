@@ -1,3 +1,5 @@
+// Mobile Nav Menu Dropdown
+
 var nav_dropdown_mobile = document.getElementsByClassName('nav-dropdown-mobile');
 var dropdowns = document.getElementsByClassName('dropdown-mobile');
 

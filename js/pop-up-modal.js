@@ -1,3 +1,5 @@
+// https://medium.com/@nerdplusdog/a-how-to-guide-for-modal-boxes-with-javascript-html-and-css-6a49d063987e
+
 var modal = document.querySelector(".modal-pop-up")
 var closeBtn = document.querySelector(".close-btn")
 

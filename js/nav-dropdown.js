@@ -1,3 +1,5 @@
+// Desktop Nav Menu Dropdown
+
 var nav_dropdown = document.getElementsByClassName('nav-dropdown');
 var dropdowns = document.getElementsByClassName('dropdown');
 
