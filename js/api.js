@@ -28,7 +28,12 @@ function displayAvailableAnimals(type, location, breed) {
 
                     console.log(response.animals[0]);
 
-                    for (i = 0; i < 8; i++) {
+                    var animals_to_show = response.animals.length;
+                    if (animals_to_show > 8) {
+                        animals_to_show = 8;
+                    }
+
+                    for (i = 0; i < animals_to_show; i++) {
 
                         if (response.animals[i].primary_photo_cropped == null) {
                             var image = "images/noimage.jpeg";
@@ -49,7 +54,7 @@ function displayAvailableAnimals(type, location, breed) {
                         let placeholder = `
                     <figure>
                         <div>
-                            <img src="${image}" class="pet-image" id="pet-image" alt="No image placeholder" title="No image placeholder">
+                            <img src="${image}" class="pet-image" id="pet-image" alt="Dog or Cat" title="Dog or Cat">
                         </div>
 
                         <div class="pet-info">
