@@ -644,6 +644,8 @@
         color: white;
         border-radius: 10px;
         transition: .5s;
+        font-weight: bold;
+        cursor: pointer;
     }
     
     .adopt-section2 form .submit-button:hover {
@@ -1102,6 +1104,9 @@
         }
         .section2-background-about .mission-statement {
             font-size: 1.5rem;
+        }
+        .section2-background-about .founder-name {
+            font-size: 1.2rem;
         }
         .section3-about figure {
             text-align: center;
