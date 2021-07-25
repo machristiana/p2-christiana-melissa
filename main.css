@@ -104,7 +104,6 @@
         font-size: 1rem;
         height: 50px;
         line-height: 50px;
-        padding: 0 20px;
         letter-spacing: 1px;
         text-decoration: none;
         transition: 0.5s;
@@ -126,11 +125,9 @@
     .dropdown-mobile ul {
         flex-direction: column;
         color: #707070;
-        padding-top: 10px;
     }
     
-    .dropdown-mobile ul li {
-        padding: 20px;
+    .dropdown-mobile ul li a {
         border-bottom: 3px solid #fff;
         background-color: #f4f0dd;
         font-family: 'montserrat', sans-serif;
@@ -140,7 +137,7 @@
         transition: 0.5s;
     }
     
-    .dropdown-mobile ul li:hover {
+    .dropdown-mobile ul li a:hover {
         background-color: #f26423;
         color: #f4f0dd;
         transition: 0.5s;
@@ -1025,7 +1022,6 @@
         }
         .dropdown ul {
             flex-direction: column;
-            color: #707070;
             padding-top: 10px;
         }
         .dropdown ul li {
@@ -1035,7 +1031,11 @@
         }
         .dropdown ul li:hover {
             background-color: #f26423;
+            transition: .3s;
+        }
+        .dropdown ul li a:hover {
             color: #f4f0dd;
+            border-bottom: none;
             transition: .3s;
         }
         .dropdown .nav-work {
